@@ -1,4 +1,5 @@
 # Lập trình ứng dụng di động lớp CQ2016/32
+## Đề tài: Phần mềm notebook
 ## Giảng viên: Nguyễn Lê Hoàng Dũng
 ### Phiên bản Swift: 4.0 - 4.2
 | MSSV | Họ và tên | Email | Số điện thoại |
