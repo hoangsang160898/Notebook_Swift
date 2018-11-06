@@ -6,6 +6,6 @@
 |--- | --- | --- | --- |
 | 1612557 | Lê Hoàng Sang | | |
 | **1612556** | **Nguyễn Hoàng Sang** | **1612556@student.hcmus.edu.vn** | **03999029922** |
-| 1612369 | Phan Thị Mai | | |
+| 1612369 | Phan Thị Mai |1612369@student.hcmus.edu.vn | 0869204167|
 | 1512471 | Hoàng Thị Hoài Nhi | | |
 
