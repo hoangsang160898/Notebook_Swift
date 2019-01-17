@@ -13,6 +13,10 @@
 		1E849FBD21BA1E63001391A8 /* Notebook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E849FBB21BA1E63001391A8 /* Notebook.xcdatamodeld */; };
 		1E849FBF21BA1E63001391A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E849FBE21BA1E63001391A8 /* Assets.xcassets */; };
 		1E849FC221BA1E63001391A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E849FC021BA1E63001391A8 /* LaunchScreen.storyboard */; };
+		1EF4C5C521F0582F00FB2A9C /* AddNewTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF4C5C421F0582F00FB2A9C /* AddNewTodoViewController.swift */; };
+		221F992E21EF945B0082B873 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221F992D21EF945B0082B873 /* Helper.swift */; };
+		221F993021EF949B0082B873 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221F992F21EF949B0082B873 /* CanvasView.swift */; };
+		221F993221EF94F00082B873 /* PaintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221F993121EF94F00082B873 /* PaintViewController.swift */; };
 		2C5BD5F721BFA4D1001A130B /* toDoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BD5F621BFA4D1001A130B /* toDoListTableViewController.swift */; };
 		2C5BD5FB21BFF370001A130B /* customViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BD5FA21BFF370001A130B /* customViewController.swift */; };
 		2C5BD5FD21C00930001A130B /* toDoListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BD5FC21C00930001A130B /* toDoListTableViewCell.swift */; };
@@ -30,6 +34,10 @@
 		1E849FBE21BA1E63001391A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E849FC121BA1E63001391A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E849FC321BA1E63001391A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EF4C5C421F0582F00FB2A9C /* AddNewTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTodoViewController.swift; sourceTree = "<group>"; };
+		221F992D21EF945B0082B873 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		221F992F21EF949B0082B873 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		221F993121EF94F00082B873 /* PaintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintViewController.swift; sourceTree = "<group>"; };
 		2C5BD5F621BFA4D1001A130B /* toDoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toDoListTableViewController.swift; sourceTree = "<group>"; };
 		2C5BD5FA21BFF370001A130B /* customViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customViewController.swift; sourceTree = "<group>"; };
 		2C5BD5FC21C00930001A130B /* toDoListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toDoListTableViewCell.swift; sourceTree = "<group>"; };
@@ -81,6 +89,10 @@
 				2C5BD5FA21BFF370001A130B /* customViewController.swift */,
 				2C5BD5FC21C00930001A130B /* toDoListTableViewCell.swift */,
 				2C5BD60021C01742001A130B /* addToDo.swift */,
+				221F992D21EF945B0082B873 /* Helper.swift */,
+				221F992F21EF949B0082B873 /* CanvasView.swift */,
+				221F993121EF94F00082B873 /* PaintViewController.swift */,
+				1EF4C5C421F0582F00FB2A9C /* AddNewTodoViewController.swift */,
 			);
 			path = Notebook;
 			sourceTree = "<group>";
@@ -164,6 +176,10 @@
 				2C5BD5FD21C00930001A130B /* toDoListTableViewCell.swift in Sources */,
 				2C983B0F21BD699B00826B12 /* NoteTableViewController.swift in Sources */,
 				1E849FBD21BA1E63001391A8 /* Notebook.xcdatamodeld in Sources */,
+				221F993221EF94F00082B873 /* PaintViewController.swift in Sources */,
+				1EF4C5C521F0582F00FB2A9C /* AddNewTodoViewController.swift in Sources */,
+				221F992E21EF945B0082B873 /* Helper.swift in Sources */,
+				221F993021EF949B0082B873 /* CanvasView.swift in Sources */,
 				1E849FB521BA1E63001391A8 /* AppDelegate.swift in Sources */,
 				2C5BD5F721BFA4D1001A130B /* toDoListTableViewController.swift in Sources */,
 			);

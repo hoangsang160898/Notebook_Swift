@@ -14,10 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        UINavigationBar.appearance().barTintColor = UIColor( red : 245.0/255.0 , green : 79.0/255.0 , blue : 88.0/255.0 , alpha : 1.0 )
-        UINavigationBar.appearance().tintColor = UIColor(red : 242.0/255.0, green : 242.0/255.0, blue : 242.0/255.0 , alpha : 1.0)
+        UINavigationBar.appearance().barTintColor = UIColor( red : 52.0/255.0 , green : 152.0/255.0 , blue : 219.0/255.0 , alpha : 1.0 )
+//        UINavigationBar.appearance().tintColor = UIColor(red : 242.0/255.0, green : 242.0/255.0, blue : 242.0/255.0 , alpha : 1.0)
         let  font = UIFont(name : "Arial", size : 18)!
         let color = UIColor( red : 242.0/255.0, green : 242.0/255.0, blue : 242.0/255.0, alpha : 1.0)
      

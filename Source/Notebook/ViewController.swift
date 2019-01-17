@@ -16,6 +16,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UINavigationControl
     @IBOutlet weak var noteNameLabel: UITextField!
     @IBOutlet weak var noteDiscriptionLabel: UITextView!
     @IBOutlet weak var noteImageView: UIImageView!
+    @IBOutlet weak var noteInforviewview: UIView!
     
     
     
@@ -30,7 +31,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UINavigationControl
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+    
         noteImageView.image=UIImage(named: "ImageTest")
         
         // Load data
@@ -44,6 +45,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UINavigationControl
             isExisting = true
         }
         
+        
         //delegate
         noteNameLabel.delegate = self
         noteDiscriptionLabel.delegate = self
@@ -53,22 +55,40 @@ class ViewController: UIViewController, UITextFieldDelegate, UINavigationControl
         noteInfoView.layer.shadowOffset = CGSize(width: 0.75, height: 0.75)
         noteInfoView.layer.shadowRadius = 1.5
         noteInfoView.layer.shadowOpacity = 0.2
-        noteInfoView.layer.cornerRadius = 2
+        noteInfoView.layer.cornerRadius = 10
         
         noteImageViewView.layer.shadowColor = UIColor(red: 0/255.0, green: 0/255.0, blue: 0/255.0, alpha: 1.0).cgColor
         noteImageViewView.layer.shadowOffset = CGSize(width: 0.75, height: 0.75)
         noteImageViewView.layer.shadowRadius = 1.5
         noteImageViewView.layer.shadowOpacity = 0.2
-        noteImageViewView.layer.cornerRadius = 2
-       
+        noteImageViewView.layer.cornerRadius = 10
+        noteInforviewview.layer.cornerRadius = 10
         noteNameLabel.setButtonBorder()
+        if noteDiscriptionLabel.text.isEmpty {
+            noteDiscriptionLabel.text = "Enter content here"
+            noteDiscriptionLabel.textColor = UIColor.lightGray
+        }
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-       
     }
 
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if noteDiscriptionLabel.textColor == UIColor.lightGray {
+            noteDiscriptionLabel.text = nil
+           noteDiscriptionLabel.textColor = UIColor.black
+        }
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if noteDiscriptionLabel.text.isEmpty {
+            noteDiscriptionLabel.text = "Enter content here"
+            noteDiscriptionLabel.textColor = UIColor.lightGray
+        }
+    }
+    
     //core data
     func saveToCoreData(completion : @escaping()->Void){
         manageObjectContext.perform {
@@ -136,7 +156,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UINavigationControl
  
     @IBAction func saveButtonWasPressed(_ sender: Any) {
         
-        if noteNameLabel.text == "" || noteNameLabel.text == "NOTE NAME" || noteDiscriptionLabel.text == "" || noteDiscriptionLabel.text == "Note Discription ..."{
+        if noteNameLabel.text == "" || noteDiscriptionLabel.text == "" || noteDiscriptionLabel.text == "Enter content here"{
             let alertController = UIAlertController(title: "Missing Information", message: "You left one ore mor  e fields empty. Let's make sure that all fields are filled before attempting to save", preferredStyle: UIAlertControllerStyle.alert)
             
             let OkAction = UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil)
@@ -220,11 +240,11 @@ class ViewController: UIViewController, UITextFieldDelegate, UINavigationControl
         return true
     }
     
-    func textViewDidBeginEditing(_ textView: UITextView) {
-        if (textView.text == "Note Discription ..."){
-            textView.text = ""
-        }
-    }
+//    func textViewDidBeginEditing(_ textView: UITextView) {
+//        if (textView.text == "Note Discription ..."){
+//            textView.text = ""
+//        }
+//    }
     
 }
 
@@ -233,7 +253,7 @@ extension UITextField{
         self.borderStyle = .none
         self.layer.backgroundColor = UIColor.white.cgColor
         self.layer.masksToBounds = false
-        self.layer.shadowColor = UIColor(red: 245.0/255.0, green: 79.0/255.0, blue: 80.0/255.0, alpha: 1.0).cgColor
+        self.layer.shadowColor = UIColor(red: 211.0/255.0, green: 84.0/255.0, blue: 0.0/255.0, alpha: 1.0).cgColor
         self.layer.shadowOffset =  CGSize(width: 0.0, height: 2.0)
         self.layer.shadowOpacity = 1.0
         self.layer.shadowRadius = 0.0

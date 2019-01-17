@@ -24,7 +24,15 @@ class addToDo: UIViewController {
              toDoList.append((newToDo?.text)!)
             newToDo?.text = ""
         }
-       
+        let isPresentingInAddNoteMode = self.presentingViewController is UINavigationController
+        if isPresentingInAddNoteMode{
+            self.dismiss(animated: true, completion: nil)
+        }
+        else {
+            self.navigationController!.popViewController(animated: true)
+          
+        }
+        
     }
     
    

@@ -14,19 +14,20 @@ class noteTableViewCell: UITableViewCell {
     @IBOutlet weak var noteImageView: UIImageView!
     @IBOutlet weak var noteNameLabel: UILabel!
     @IBOutlet weak var noteDiscriptionLabel: UILabel!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
        
         noteImageView.image=UIImage(named: "ImageTest")
         
         //style :
-        shadowView.layer.shadowColor = UIColor(red: 0/255.0, green: 0/255.0, blue: 0/255.0, alpha: 1.0).cgColor
+        noteImageView.layer.cornerRadius = 32
+        noteImageView.layer.masksToBounds = true
         shadowView.layer.shadowOffset = CGSize(width: 0.75, height: 0.75)
-        shadowView.layer.shadowRadius = 1.5
-        shadowView.layer.shadowOpacity = 0.2
-        shadowView.layer.cornerRadius = 2
-        noteImageView.layer.cornerRadius = 2
+        shadowView.layer.shadowRadius = 10
+        shadowView.layer.shadowOpacity = 0.5
+        shadowView.layer.cornerRadius = 10
+     
         
     }
 

@@ -23,5 +23,5 @@ class toDoListTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
         
     }
-
+    
 }
